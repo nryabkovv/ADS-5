@@ -4,11 +4,11 @@
 #include <string>
 template <typename T, int size = 0>
 class TStack {
-private:
-    T arr[size] = { 0 };
+ private:
+    T arr[size] = {0};
     int top;
 
-public:
+ public:
     TStack() {
         top = -1;
     }
@@ -31,4 +31,5 @@ public:
         return top == size;
     }
 };
+
 #endif  // INCLUDE_TSTACK_H_
